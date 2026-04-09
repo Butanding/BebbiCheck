@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BebbiCheck - Rhein Daten Basel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rhein Daten Basel</h1>
+    </header>
+    <main>
+        <div class="tiles">
+            <div class="tile" id="air-temp">
+                <h2>Lufttemperatur</h2>
+                <p id="air-temp-value">-- °C</p>
+            </div>
+            <div class="tile" id="water-temp">
+                <h2>Wassertemperatur</h2>
+                <p id="water-temp-value">-- °C</p>
+            </div>
+            <div class="tile" id="water-level">
+                <h2>Pegelstand</h2>
+                <p id="water-level-value">-- cm</p>
+            </div>
+            <div class="tile" id="water-quality">
+                <h2>Wasserqualität</h2>
+                <p id="water-quality-value">-- /10</p>
+            </div>
+        </div>
+    </main>
+    <div id="chart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
