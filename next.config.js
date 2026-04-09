@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Keine spezielle Konfiguration nötig
+  experimental: {
+    turbo: false
+  }
 }
 
 module.exports = nextConfig
